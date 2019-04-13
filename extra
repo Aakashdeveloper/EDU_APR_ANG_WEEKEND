@@ -1,0 +1,71 @@
+packages
+
+local install packages
+Gloabl  install  packages
+
+package.json 
+{
+    name:"a",
+    class:"ui"
+},
+{
+    name:"b",
+    class:"ai"
+}
+
+Step to package.json
+Step1>
+npm init
+
+Step2>
+Answer Question
+package name: (learnpackage) 
+version: (1.0.0) 
+description: this is about the  packages
+entry point: (index.js) 
+test command: 
+git repository: 
+keywords: angular node
+author: edureka
+license: (ISC) 
+
+Step3>
+enter  yes
+
+
+How to install package
+> npm install --save <packagename>
+> npm  install --save  zone.js
+> npm  install --save  @aakashdeveloper/create-node-app
+
+Setup angular
+Step1>
+npm install -g @angular/cli
+
+windows
+run command as admin
+
+mac
+sudo npm install -g @angular/cli
+
+Step2
+go to folder
+
+Step3
+make new folder
+mkdir firstapp
+
+Step4
+cd firstapp
+
+step5
+ng new firstapp
+
+step6
+cd  firstapp
+
+step7
+npm start
+
+step8
+http://localhost:4200

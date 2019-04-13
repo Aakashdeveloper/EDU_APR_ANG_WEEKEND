@@ -1,0 +1,19 @@
+{
+  "name": "learnpackage",
+  "version": "1.0.0",
+  "description": "this is about the  packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angular",
+    "node"
+  ],
+  "author": "edureka",
+  "license": "ISC",
+  "dependencies": {
+    "@aakashdeveloper/create-node-app": "^1.0.34",
+    "zone.js": "^0.9.0"
+  }
+}
