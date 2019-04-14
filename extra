@@ -69,3 +69,65 @@ npm start
 
 step8
 http://localhost:4200
+
+///To change port number
+change in start script of  package.json
+>> ng serve --port 7800
+
+Module=> all declaration happen in module =>NgModule
+Component=> html css and logic=>Component
+Pipe=> that help to do data  change on runtime=>Pipe & PipeTransform
+Services =>  help to connect with third party=>Injectable
+Routing=> to navigate between pages=>NgModule
+
+
+One Main Module & One  main  Component
+
+Angular Compile
+angular.json => main.ts => AppModule => AppComponent
+
+tslint.json 
+    => to make standard(style guide)
+    => Default File (no change)(imp)
+tsconfig.json
+    => Convert code from .ts => .js(transpile)
+    => Default File (no change)(imp)
+README.md 
+    => Text file withh application information
+    => Default File (change require)(not important)
+package.json
+    => packages, start commond, version description
+    => Default File (min change req)(imp)
+package-lock.json
+    => it contains dependent package
+    => Default File (no change req) (not imp)
+angular.json
+    => metadata & configuration file
+    => Default File(min change req)(Imp)
+.gitignore
+    => file or folder we dont want to push to git
+    => Default file(no change req)(not imp)
+.editorconfig
+    => file to make code standerd in the team
+    => Default File(min change)(not imp)
+app
+    => Complete app  code here
+    => (max change)(imp)
+assets
+    => All Static things
+    => (not change)(change req)
+browseslist
+    => contains all browser it support
+    => (not imp) (no change)
+favicon.ico
+    => just image
+    => (not imp)
+index.html
+    => main html file that loade our first Component
+    => (imp) (min change)
+main.ts
+    => tell which module to load first
+    => (no change req) (imp)
+style.css
+    => main css File
+    => (change req) (not imp)
