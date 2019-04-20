@@ -131,3 +131,39 @@ main.ts
 style.css
     => main css File
     => (change req) (not imp)
+
+Tables
+Alerts
+Button
+Panels
+Glyphicon
+Navbars
+Forms
+input
+Modal
+
+///////Binding/////
+
+>>>>>>>One Way Binding<<<<<<<<<<<<
+######>> Data Binding {{}}
+######>> Property Binding []
+######>> Event Binding ()
+>>>>>>>Two Way Binding<<<<<<<<<<<<
+>>>Data Binding [()]
+
+/***********/
+string
+number
+boolean
+any[]
+
+https://ngapi4.herokuapp.com/api/getProducts
+
+//
+Directives
+
+*ngFor === forloop
+*ngIf === if else
+
+Pipe
+sending data

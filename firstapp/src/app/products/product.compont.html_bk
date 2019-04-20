@@ -1,0 +1,62 @@
+<h1>Products Page</h1>
+<button class="btn btn-success">First</button>
+<button class="btn btn-warning">First</button>
+<button class="btn btn-danger">First</button>
+<button class="btn btn-primary">First</button>
+<button class="btn btn-info">First</button>
+<br/><br/>
+<span class="glyphicon glyphicon-heart"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-grain"></span>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        Users Info
+    </div>
+    <div class="panel-body">
+            <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Class</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John</td>
+                            <td>UI</td>
+                        </tr>
+                        <tr>
+                            <td>Bill</td>
+                            <td>Angular</td>
+                        </tr>
+                    </tbody>
+                </table>
+    </div>
+    
+</div>
+
+<br/>
+<div class="col-md-3 col-sm-4 col-xs-6">
+    <input type="text"/>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+    <input type="text"/>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+    <input type="text"/>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+    <input type="text"/>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+    <input type="text"/>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+    <input type="text"/>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+    <input type="text"/>
+</div>
+<div class="col-md-3 col-sm-4 col-xs-6">
+    <input type="text"/>
+</div>
