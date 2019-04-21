@@ -19,7 +19,7 @@
             </div>
         </div>
         {{showImage}}
-        <div class="table-responsive" >
+        <div class="table-responsive" *ngIf="products && products.length; else noData">
             <table class="table">
                 <thead>
                     <tr>
@@ -37,20 +37,28 @@
                     </tr>
                 </thead>
                 <tbody *ngIf="showTable">
-                    <tr *ngFor="let prod of products">
+                    <tr *ngFor="let prod of products | productSearch:userInput">
                         <td>
                             <img [src]="prod.imageUrl" 
-                                  *ngIf="showImage"/>
+                                  *ngIf="showImage"
+                                  [style.width.px]="imageWidth"/>
                         </td>
-                        <td>{{prod.productName}}</td>
-                        <td>{{prod.productCode}}</td>
+                        <td style="color:rgb(14, 23, 146)">{{prod.productName | myUpper:'upper'}}</td>
+                        <td>{{prod.productCode | myUpper:'lower'}}</td>
                         <td>{{prod.releaseDate}}</td>
-                        <td>{{prod.price}}</td>
-                        <td>{{prod.starRating}}</td>
+                        <td [ngStyle]="{'background-color':prod.price<20?'teal':'tomato'}">
+                            {{prod.price | discount | currency:'INR'}}
+                        </td>
+                        <td>
+                            <app-star [rating]="prod.starRating"></app-star>
+                        </td>
                     </tr>
 
                 </tbody>
             </table>
         </div>
+        <ng-template #noData>
+            <img src="../../assets/loading.gif">
+        </ng-template>
     </div>
 </div>

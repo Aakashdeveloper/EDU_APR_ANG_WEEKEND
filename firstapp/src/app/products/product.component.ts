@@ -1,16 +1,20 @@
 import { Component } from '@angular/core';
+import { IProduct } from './product.model';
 
 @Component({
     selector: 'app-prod',
-    templateUrl: './product.component.html'
+    templateUrl: './product.component.html',
+    // styles: ['thead{color:teal}', 'h4{color:tomato}']
+    styleUrls: ['./product.component.css']
 })
 
 export class ProductComponent {
   title: string = '*****Product App*****';
   showTable: boolean = true;
   showImage: boolean = false;
-  userInput: string = 'Leaf';
-  products: any[] = [
+  userInput: string ;
+  imageWidth: number = 100;
+  products: IProduct[] = [
     {
         _id: '5a05dacc734d1d68d42d31f3',
         productId: 1,
@@ -30,7 +34,7 @@ export class ProductComponent {
         releaseDate: 'March 18, 2016',
         description: '15 gallon capacity rolling garden cart',
         price: 32.99,
-        starRating: 4.2,
+        starRating: 2.6,
         imageUrl: 'https://i.ibb.co/HD3RHMW/videogame.jpg'
       },
       {
@@ -40,7 +44,7 @@ export class ProductComponent {
         productCode: 'TBX-0048',
         releaseDate: 'May 21, 2016',
         description: 'Curved claw steel hammer',
-        price: 8.9,
+        price: 28.9,
         starRating: 4.8,
         imageUrl: 'https://i.ibb.co/TrR7jkM/hammer.png'
       }

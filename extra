@@ -166,4 +166,56 @@ Directives
 *ngIf === if else
 
 Pipe
+uppercase/ Lowercase / currency/ percentage /date/ titlecase
 sending data
+
+pipe will take 2 parameter 
+1st is value
+and we have n number after that
+
+function  add(a,b){
+    return a+b;
+}
+
+add(1,2)
+
+let add = (a,b) => { return a+b }
+
+var a = ["a","b","c","d"]
+undefined
+a.indexOf("b")
+1
+a.indexOf("d")
+3
+a.indexOf("a")
+0
+a.indexOf("e")
+-1
+a.indexOf("h")
+-1
+
+var a = 10
+
+var a
+a = 10
+
+var we can recdeclare & reassign
+let we cannot recdeclare but reassign
+const cannot recdeclare nor reassign
+
+
+// pipe
+// cutome Pipe
+// Search Bar
+// Styles
+// Nested a child Component
+// pass data from parent to child
+// LifeCycle
+
+//OutPut
+//Services
+//Routing
+//Module
+//Gaurds
+//NgClass
+//Git
