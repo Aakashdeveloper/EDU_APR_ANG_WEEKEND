@@ -219,3 +219,23 @@ const cannot recdeclare nor reassign
 //Gaurds
 //NgClass
 //Git
+
+var a = 10
+var b = "my  age is "+a
+my age is 10;
+
+var b = `my age is ${a}`
+
+/**************************
+    Git learn 
+**************************/
+
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/git_Learn.git
+git push -u origin master
+
+ git branch -a
+
+ 

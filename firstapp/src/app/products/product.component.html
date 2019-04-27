@@ -50,7 +50,8 @@
                             {{prod.price | discount | currency:'INR'}}
                         </td>
                         <td>
-                            <app-star [rating]="prod.starRating"></app-star>
+                            <app-star [rating]="prod.starRating"
+                            (ratingClicked)="onMessageRecive($event)"></app-star>
                         </td>
                     </tr>
 
