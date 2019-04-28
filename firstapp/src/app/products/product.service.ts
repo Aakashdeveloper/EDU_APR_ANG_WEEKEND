@@ -3,6 +3,7 @@ import { IProduct } from './product.model';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
+
 @Injectable()
 
 export class ProductService {
@@ -12,6 +13,10 @@ export class ProductService {
 
     getProducts(): Observable<IProduct[]> {
         return this.http.get<IProduct[]>(`${this.url}`);
+    }
+
+    getDetails(id): Observable<IProduct[]> {
+        return this.http.get<IProduct[]>(`${this.url}?productId=${id}`);
     }
 }
 
