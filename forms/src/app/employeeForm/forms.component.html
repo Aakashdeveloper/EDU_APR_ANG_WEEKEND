@@ -1,0 +1,110 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        Employee Form
+    </div>
+    <div class="panel-body" >
+        <form #form="ngForm" (submit)="formSubmit(form)">
+            <div  class="form-group" [class.has-error]="firstName.invalid">
+                <label for="firstname"
+                class="control-label">FirstName</label>
+                <input type="text"
+                        class="form-control"
+                        id="firstname"
+                        name="firstname"
+                        placeholder="firstname"
+                        [(ngModel)]="model.firstname"
+                        #firstName="ngModel"
+                        required/>
+                <div class="alert alert-danger" *ngIf="firstName.invalid">
+                    FirstName is required
+                </div>
+            </div>
+            <h2>Classes</h2>
+            <h3>{{firstName.invalid}}</h3>
+            <div  class="form-group">
+                <label for="lastname">LastName</label>
+                <input type="text"
+                        class="form-control"
+                        id="lastname"
+                        name="lastname"
+                        placeholder="lastname"
+                        [(ngModel)]="model.lastname"
+                        required/>
+            </div>
+            <div  class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email"
+                            class="form-control"
+                            id="email"
+                            name="email"
+                            placeholder="email"
+                            [(ngModel)]="model.email"
+                            required/>
+                        
+            </div>
+            <div  class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password"
+                            class="form-control"
+                            id="password"
+                            name="password"
+                            placeholder="password"
+                            [(ngModel)]="model.password"
+                            #password="ngModel"
+                            minlength = 5/>
+                    <div class="alert alert-danger" *ngIf="password.invalid">
+                            password is required
+                    </div>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"
+                        name="fulltime"
+                        [(ngModel)]="model.fulltime"
+                        value="fulltime"/>
+                    Fulltime
+                </label>
+            </div>
+            <div class="radio">
+                    <label>
+                        <input type="radio"
+                            name="gender"
+                            [(ngModel)]="model.gender"
+                            value="female"/>
+                        Female
+                    </label>
+            </div>
+            <div class="radio">
+                    <label>
+                        <input type="radio"
+                            name="gender"
+                            [(ngModel)]="model.gender"
+                            value="male"/>
+                        Male
+                    </label>
+            </div>
+            <div class="form-group">
+                <label>Code Lang</label>
+                <select class="form-control"
+                    name="codelang"
+                    (blur) ="validateCodeLang($event)"
+                    [(ngModel)]="model.codelang">
+                    <option value="default"> Please Select valid Input</option>
+                    <option *ngFor="let lang of languages">
+                        {{lang}}
+                    </option>
+                </select>
+                <div class="alert alert-danger" *ngIf="hasCodelangError">
+                        Please Select valid input
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success"
+            [disabled]="hasCodelangError">
+                Submit
+            </button> &nbsp;
+            <button type="reset" class="btn btn-danger">
+                    Reset
+            </button>
+        </form>
+    </div>
+</div>  

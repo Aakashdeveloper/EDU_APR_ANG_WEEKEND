@@ -238,4 +238,9 @@ git push -u origin master
 
  git branch -a
 
- 
+
+
+//////
+ng-pristine ng-untouched ng-invalid
+ng-dirty    ng-touched   ng-valid
+    
